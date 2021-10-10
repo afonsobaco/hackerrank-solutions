@@ -23,10 +23,9 @@ class FoodFactory {
   }
 }
 
+//Reduced Class Version
 public class Solution {
-
   public static void main(String args[]) {
-    try {
       Scanner sc = new Scanner(System.in);
       //creating the factory
       FoodFactory foodFactory = new FoodFactory();
@@ -34,9 +33,5 @@ public class Solution {
       Food food = foodFactory.getFood(sc.nextLine());
       System.out.println("The factory returned " + food.getClass());
       System.out.println(food.getType());
-    } catch (Do_Not_Terminate.ExitTrappedException e) {
-      System.out.println("Unsuccessful Termination!!");
-    }
   }
-
 }
