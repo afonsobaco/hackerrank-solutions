@@ -19,11 +19,7 @@ class Cake implements Food {
 
 class FoodFactory {
   public Food getFood(String order) {
-    if (Pizza.class.getSimpleName().equalsIgnoreCase(order)) {
-      return new Pizza();
-    } else {
-      return new Cake();
-    }
+    return(order.equals("pizza"))?new Pizza():new Cake();
   }
 }
 
